@@ -14,13 +14,13 @@ class periksa extends Model
         //'diagnosis'
     //];
     
-    public function pasiens(): HasMany
+    public function pasiens():BelongsTo
     {
-        return $this->hasMany(periksa::class, 'id_pasien');
+        return $this->belongsTo(User::class, 'id_pasien');
     }
 
-    public function dokters():HasMany
+    public function dokters():BelongsTo
     {
-        return $this->hasMany(periksa::class, 'id_dokter');
+        return $this->belongsTo(User::class, 'id_dokter');
     } 
 }

@@ -16,7 +16,7 @@ class PeriksaSeeder extends Seeder
             'id_pasien'=> 2,
             'id_dokter'=> 1,
             'tgl_periksa'=> Carbon ::now(),
-            'catatan'=>'pasien mengalama demam tinggi dan batuk',
+            'catatan'=>'pasien mengalami demam tinggi dan batuk',
             'biaya_periksa'=>150000
         ]);
     }
